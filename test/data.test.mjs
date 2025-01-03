@@ -1,15 +1,9 @@
 import { fetchUsers } from "../src/script.mjs";
+import { main } from "../src/script.mjs";
 import { expect } from "chai";
 import sinon from "sinon";
 
-describe('Тестирование подключения к API', () => {
-
-    // Проверка подключения к API
-    it('should return all users', async () => {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users');
-
-        expect(response.status).to.eql(200);
-    })
+describe('Тестирование функции fetchUsers', () => {
 
     // Проверка возвращения из API массива данных
     it('should return an array of users', async () => {
@@ -51,10 +45,8 @@ describe('Тестирование подключения к API', () => {
     })
 })
 
-// интеграционное тестирование
-
-// проверить корректность вывода users
-
-// подключение к API
-
-// проверить типы данных
+describe('log user name', () => {
+    it('should fetch and print the user data', async () => {
+        await main();
+    })
+})

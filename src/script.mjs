@@ -14,7 +14,7 @@ export async function fetchUsers () {
     }
 }
 
-async function main () {
+export async function main () {
     const userList = await fetchUsers();
     console.log(userList);
     userList.forEach((userList) => console.log(userList.name));
