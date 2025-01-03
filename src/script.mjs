@@ -1,4 +1,4 @@
-async function fetchUsers () {
+export async function fetchUsers () {
     try{
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
         if (!response.ok) {
@@ -21,8 +21,3 @@ async function main () {
 }
 
 main();
-
-// проверить корректность вывода users
-// подключение к API
-// проверить типы данных
-// интеграционное тестирование

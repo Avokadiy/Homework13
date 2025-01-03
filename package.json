@@ -1,20 +1,21 @@
 {
-  "dependencies": {
-    "chai": "^5.1.2",
-    "mocha": "^11.0.1"
-  },
   "name": "homework-13",
   "version": "1.0.0",
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "mocha:test": "mocha tests/data.test.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "chai": "^5.1.2",
+    "cypress": "^13.17.0",
+    "mocha": "^11.0.1",
+    "sinon": "^19.0.2",
+    "supertest": "^7.0.0"
   }
 }
